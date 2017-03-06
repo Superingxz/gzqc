@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray3"
+    android:paddingTop="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="7dp"
+        >
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/et1"
+            android:text="订单号：EERTGHYY1234567899"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:id="@+id/order_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/et1"
+            android:text="下单时间: 2016-9-19"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="等待买家付款"
+            android:gravity="right"
+            android:textColor="@color/orange3"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <com.xolo.gzqc.ui.view.ScrollListView
+        android:id="@+id/slv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_qty"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="共1件商品  合计："
+            android:gravity="right"
+            android:textColor="@color/text1"
+            />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥208.00"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="right"
+        android:padding="7dp"
+        >
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text1"
+            android:text="取消订单"
+            android:minWidth="50dp"
+            android:minHeight="30dp"
+            android:padding="5dp"
+            android:background="@drawable/shape_et_bg"
+            />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="付款"
+            android:minWidth="50dp"
+            android:minHeight="30dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_button_orange"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text3"
+        android:layout_below="@id/iv"
+        />
+
+</LinearLayout>

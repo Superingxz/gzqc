@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg"
+    tools:context=".ui.activity.pickcar.AddInquiryParts">
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="新增配件"
+        />
+
+    <TableLayout
+        android:layout_marginTop="20dp"
+        style="@style/tablayout1"
+        >
+
+
+        <TableRow
+            style="@style/tab_row"
+            >
+
+            <TextView
+                style="@style/title_mandatory"
+                android:text="配件名称"
+                />
+
+            <EditText
+                android:id="@+id/et1"
+                style="@style/et1"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:hint="输入配件"
+                />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/select"
+                style="@style/btn2"
+                android:layout_height="30dp"
+                android:text="选择"
+                android:layout_marginLeft="10dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            style="@style/tab_row"
+            >
+
+            <TextView
+                style="@style/title_mandatory"
+                android:text="数量"
+                android:layout_height="30dp"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <EditText
+                    android:id="@+id/et5"
+                    style="@style/et1"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:hint="输入数量"
+                    android:inputType="number"
+                    />
+
+                <EditText
+                    android:id="@+id/et7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个"
+                    android:layout_marginRight="5dp"
+                    android:textSize="16sp"
+                    android:minWidth="70dp"
+                    android:height="30dp"
+                    android:gravity="center"
+                    android:background="@null"
+                    />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            style="@style/tab_row"
+            >
+
+            <TextView
+                style="@style/title_mandatory"
+                android:text="成本单价"
+                />
+
+            <EditText
+                android:id="@+id/et6"
+                style="@style/et1"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:hint="输入配件成本单价"
+                />
+
+        </TableRow>
+
+
+        <TableRow
+            style="@style/tab_row"
+            >
+
+            <TextView
+                style="@style/tv1"
+                android:text="来源"
+                />
+
+            <TextView
+                android:id="@+id/et3"
+                style="@style/tv2"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:hint="选择来源"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/confirm"
+        style="@style/btn2"
+        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:text="确定"
+        android:layout_margin="30dp"
+        />
+
+
+
+</LinearLayout>

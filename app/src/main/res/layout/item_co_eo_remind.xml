@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/main05" />
+
+                <TextView
+                    android:id="@+id/remind_text_num"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/remind_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="19dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#cccccc"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <Button
+                    android:id="@+id/remind_subscribe_bt"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_button_2"
+                    android:text="一键预约"
+                    android:textColor="@color/blue1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/remind_maintain_bt"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_button_2"
+                    android:text="联系维修厂"
+                    android:textColor="@color/blue1" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

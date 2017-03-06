@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_exedittext"
+    >
+
+    <View
+        android:id="@+id/divider_top"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/divider"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:padding="3dp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:text="公司名称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text1"
+            android:textColorHint="@color/text2"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="鑫浪"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/text1"
+            android:textColorHint="@color/text2"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:textSize="14sp"
+            />
+
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_select"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/arrow_right"
+            />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn"
+            style="@style/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/divider_blow"
+        android:visibility="gone"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/divider"
+        />
+
+</LinearLayout>

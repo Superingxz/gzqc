@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.activity.pickcar.AddInquiryParts">
+
+
+<RelativeLayout
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+        android:gravity="right"
+        android:id="@+id/maintain_text1"
+        android:layout_alignParentLeft="true"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text1"
+        android:layout_centerInParent="true"
+        android:text="车牌号："
+        />
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_et_bg"
+        android:layout_toRightOf="@+id/maintain_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:paddingLeft="5dp"
+        android:textSize="14dp"
+        android:id="@+id/maintain_et"
+        android:gravity="left|center_vertical"
+        android:layout_toLeftOf="@+id/et_img_layout"
+        android:layout_width="match_parent"
+        android:background="@null"
+        android:layout_height="match_parent" />
+        <RelativeLayout
+            android:id="@+id/et_img_layout"
+            android:layout_width="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="45dp">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/maintain_img1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/down_img"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</LinearLayout>

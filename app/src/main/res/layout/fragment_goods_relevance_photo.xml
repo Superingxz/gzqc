@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <com.xolo.gzqc.ui.view.ScrollListView
+          android:divider="@null"
+          android:id="@+id/lv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/add_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@mipmap/tj" />
+        <Button
+            android:id="@id/submit"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="95dp"
+            android:background="@drawable/shape_button_2"
+            android:layout_height="35dp"
+            android:textColor="@color/blue1"
+            android:text="提交"
+           />
+    </LinearLayout>
+
+
+</ScrollView>

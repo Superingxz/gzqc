@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.xolo.gzqc.ui.fragment.MaintenanceListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <com.xolo.gzqc.ui.view.CustomExpandableListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/activity_bg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+              android:text="配件费:"
+                />
+
+            <TextView
+                android:id="@+id/price_part"
+                android:textColor="@color/text1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:textColor="@color/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="工时费:"
+                />
+
+            <TextView
+                android:id="@+id/price_cost"
+                android:textColor="@color/text1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="总金额:"
+                />
+
+            <TextView
+                android:id="@+id/price_total"
+                android:textColor="@color/text1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:textColor="@color/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="接车员:"
+                />
+
+            <TextView
+                android:id="@+id/sendMan"
+                android:textColor="@color/text1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+
+    <Button
+        android:id="@+id/confirm_save"
+        style="@style/btn2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="保存"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/confirm_send"
+        style="@style/btn2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="发送客户"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:id="@+id/confirmed"
+        style="@style/btn2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="客户确认"
+        android:layout_margin="20dp"
+        />
+
+    <CheckBox
+        android:visibility="gone"
+        android:id="@+id/print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打印"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

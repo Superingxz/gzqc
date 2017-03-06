@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.xolo.gzqc.ui.fragment.VerhaulHistroyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/tb_carno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                style="@style/tv1"
+                android:text="   车牌号"
+                android:paddingRight="10dp"
+                />
+            <EditText
+                android:id="@+id/car_nunber"
+                style="@style/et1"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:hint="输入车牌"
+                android:background="@drawable/shape_et_bg"
+                />
+
+            <Button
+                android:id="@+id/select"
+                style="@style/btn2"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="查询"
+                android:layout_marginRight="10dp"
+                />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ListView
+        android:layout_below="@id/tb_carno"
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:paddingTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:focusableInTouchMode="true"
+        android:background="#F0EFF4"
+        android:keyBackground="@android:color/white"
+        android:keyTextColor="#5E5E5E"
+        android:shadowColor="#ffffff"
+        android:shadowRadius="0.0"
+        android:keyTextSize="18sp"
+        android:labelTextSize="18sp"
+        android:keyPreviewLayout="@layout/key_preview_layout"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
+
+</FrameLayout>

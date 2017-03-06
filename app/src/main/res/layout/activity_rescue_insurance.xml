@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.xolo.gzqc.ui.view.TitleView
+            android:id="@+id/titleview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:mtitle="车辆出险" />
+
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="保险公司"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:id="@+id/co_server_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"></Spinner>
+
+                    <TextView
+                        android:id="@+id/companyphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="20dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#d9d9d9" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:minHeight="45dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dp_id"
+                android:layout_width="wrap_content"
+                android:layout_toLeftOf="@+id/send_bt_depot"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="顺达维修厂:"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+<!--
+            <TextView
+                android:id="@+id/dp_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/dp_id"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />-->
+
+            <Button
+                android:id="@+id/send_bt_depot"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape_button_blue"
+                android:text="发送定位"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#d9d9d9" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:minHeight="45dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/trailer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tow_truck_bt"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="拖车公司:"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+
+  <!--          <TextView
+                android:id="@+id/trailer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/trailer"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />-->
+
+            <Button
+                android:id="@+id/tow_truck_bt"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape_button_blue"
+                android:text="发送定位"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#d9d9d9" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/alarm_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="交警报案:"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/alarm_tel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/alarm_tel"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#d9d9d9"></View>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/insurance_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="车辆出险指南" />
+
+
+        <TextView
+            android:id="@+id/road_guiide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="" />
+
+
+    </LinearLayout>
+</ScrollView>

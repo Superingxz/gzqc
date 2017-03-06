@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">车天地</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--自动更新-->
+    <string name="update_app_model_prepare">准备下载</string>
+    <string name="update_app_model_progress">正在下载 %1$d%2$s</string>
+    <string name="update_app_model_success">下载成功(点击安装)</string>
+    <string name="update_app_model_error">下载失败(点击浏览器下载)</string>
+    <string name="downloading_apk">正在后台下载...</string>
+
+    <!-- photoPicker -->
+    <string name="club_picture">图片</string>
+    <string name="club_allPicture">全部图片</string>
+    <string name="club_allPicture2">所有图片</string>
+    <string name="club_takePicture">拍摄照片</string>
+    <string name="club_image_load_acute">图片加载异常，请重试</string>
+    <string name="photos_num">%1$d张</string>
+    <string name="msg_no_camera">没找到摄像头</string>
+    <string name="msg_maxi_capacity">最多选择9张照片</string>
+    <string name="commit">确定</string>
+    <string name="commit_num">确定(%1$d/%2$d)</string>
+</resources>

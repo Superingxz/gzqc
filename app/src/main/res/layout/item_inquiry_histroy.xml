@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/qr_code"
+                />
+
+            <TextView
+                android:id="@+id/item1"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="维修项目：发动机大修"
+                android:layout_toLeftOf="@id/iv_1"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+        android:id="@+id/item2"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="状态：拆检"
+        />
+        <TextView
+            android:id="@+id/item3"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="状态：拆检"
+            />
+        <TextView
+            android:id="@+id/item4"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="状态：拆检"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray2"
+        />
+
+
+</LinearLayout>

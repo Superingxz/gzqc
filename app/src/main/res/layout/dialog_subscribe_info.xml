@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/send_info_name"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="right"
+            android:text="故障描述："
+            android:textColor="@color/text1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/send_info_name"
+            android:background="@drawable/shape_et_bg">
+
+            <EditText
+                android:id="@+id/fault_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="right"
+            android:text="预约时间："
+            android:textColor="@color/text1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/time1"
+            android:background="@drawable/shape_et_bg">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:maxLength="11"
+                android:id="@+id/time_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_toLeftOf="@+id/et_img_layout"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:textSize="14dp" />
+            <RelativeLayout
+                android:id="@+id/et_img_layout"
+                android:layout_width="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="45dp">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/maintain_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/down_img"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="right"
+            android:text="计划来厂时间："
+            android:textColor="@color/text1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/time2"
+            android:background="@drawable/shape_et_bg">
+
+            <TextView
+                android:maxLength="11"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/time1_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/et_img_layout1"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:textSize="14dp" />
+            <RelativeLayout
+                android:id="@+id/et_img_layout1"
+                android:layout_width="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="45dp">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/maintain_img1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/down_img"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

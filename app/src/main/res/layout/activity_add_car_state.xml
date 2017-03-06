@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.pickcar.AddCarStateActivity">
+
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtitle="新增车况记录"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_bg"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/activity_bg"
+            android:layout_marginTop="20dp"
+            >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+
+
+                <TableRow
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        style="@style/tv3"
+                        android:text="类别:"
+                        />
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/type"
+                        style="@style/tv2"
+                        android:background="@null"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/rg"
+                        android:orientation="horizontal"
+                        >
+                        <RadioButton
+                            android:id="@+id/rb_wg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="外观"
+                            />
+                        <RadioButton
+                            android:id="@+id/rb_ns"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="内饰"
+                            android:layout_marginLeft="20dp"
+                            />
+                    </RadioGroup>
+
+                </TableRow>
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider"
+                    />
+
+
+                <TableRow
+                    android:layout_marginTop="5dp"
+                    >
+                    <TextView
+                        style="@style/tv3"
+                        android:text="具体描述:"
+                        android:layout_height="match_parent"
+                        />
+                    <EditText
+                        android:id="@+id/description"
+                        style="@style/et1"
+                        android:background="@drawable/shape_et_bg"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:minHeight="50dp"
+                        android:minLines="5"
+                        android:gravity="top"
+                        android:padding="5dp"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    style="@style/tv3"
+                    android:text="照片:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <GridView
+                    android:id="@+id/gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:numColumns="3"
+                    android:horizontalSpacing="5dp"
+                    />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/iv"
+                    android:padding="20dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+                <Button
+                    android:id="@+id/confirm"
+                    style="@style/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="确定"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

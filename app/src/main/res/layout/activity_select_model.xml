@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/shape_role_bg"
+    tools:context="com.xolo.gzqc.ui.activity.SelectModelActivity">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/btn_carowner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/btn_role_bg"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/carowners"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="车主"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:textColor="@color/text1"
+                android:paddingRight="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_dept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/btn_role_bg"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/role_team"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="维修厂员工"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:textColor="@color/text1"
+                android:paddingRight="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_consumers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/btn_role_bg"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/consumers"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="消费者"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:textColor="@color/text1"
+                android:paddingRight="10dp"
+                android:id="@+id/textView2" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_supplier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/btn_role_bg"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/role_supplier"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="供应商"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:textColor="@color/text1"
+                android:paddingRight="10dp"
+                />
+
+        </LinearLayout>
+
+</LinearLayout>

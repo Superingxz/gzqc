@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_consignee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv1"
+            android:text="收货人：叶志峰  18306677421"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_below="@id/tv_consignee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货地址为空，赶紧添加吧!"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="默认"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_defult_address"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_hidden"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设为默认"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/btn_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    >
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/edit"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="编辑"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/text1"
+                            />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_delect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toLeftOf="@id/btn_edit"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    >
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/delect_good"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="删除"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/text1"
+                            />
+
+                </LinearLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>

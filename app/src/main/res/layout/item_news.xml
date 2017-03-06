@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    >
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/item1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/de_default_portrait"
+                />
+
+            <TextView
+                android:textColor="@color/text1"
+                android:id="@+id/item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="欧小贱"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/item1"
+                android:layout_marginLeft="10dp"
+                />
+
+            <CheckBox
+                android:id="@+id/item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item3"
+            android:textColor="@color/text2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="明天广州琶洲开会展"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+        
+        
+    </LinearLayout>
+
+
+</LinearLayout>

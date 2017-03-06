@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_permission"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xolo.gzqc.ui.activity.administrator.PermissionActivity">
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtitle="角色权限"
+        />
+    <com.xolo.gzqc.ui.view.TabView
+    android:id="@+id/mTabview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    />
+
+    <ImageView
+        android:id="@+id/btn_add"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/add"
+        android:padding="8dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_purchase_reservation_detailed"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xolo.gzqc.ui.activity.boss.PurchaseReservationDetailedActivity">
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="接车明细"
+        />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        />
+
+</LinearLayout>

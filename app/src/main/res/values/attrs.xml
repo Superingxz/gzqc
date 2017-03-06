@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleView">
+        <attr name="mtitle" format="string"/>
+        <attr name="titleRight" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExEditText">
+        <attr name="hiddenTop" format="boolean"/>
+        <attr name="showBlow" format="boolean"/>
+        <attr name="leftTitle" format="string"/>
+        <attr name="content" format="string"/>
+        <attr name="hintContent" format="string"/>
+        <attr name="showArrow" format="boolean"/>
+        <attr name="textBtn" format="string"/>
+        <attr name="isEdit" format="boolean"/>
+        <attr name="leftwith" format="integer"/>
+        <attr name="leftSrc" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+
+    <!--圆角头像-->
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+</resources>

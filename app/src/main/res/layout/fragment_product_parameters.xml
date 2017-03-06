@@ -1,0 +1,161 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    tools:context="com.xolo.gzqc.ui.fragment.consumers.ProductParametersFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_et_bg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="商品名称"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray1"
+                />
+
+            <TextView
+                android:id="@+id/tv_good_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/text1"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="商品类别"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray1"
+                />
+
+            <TextView
+                android:id="@+id/tv_good_category"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/text1"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="规格编号"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray1"
+                />
+
+            <TextView
+                android:id="@+id/tv_good_specifications"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/text1"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="商品描述"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray1"
+                />
+
+            <TextView
+                android:id="@+id/tv_good_describe"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/text1"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

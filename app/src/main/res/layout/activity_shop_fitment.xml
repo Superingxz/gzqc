@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <com.xolo.gzqc.ui.view.TitleView
+        android:layout_alignParentTop="true"
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="店铺首页装修"
+        />
+    <LinearLayout
+        android:layout_below="@+id/titleview"
+        android:layout_above="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:listSelector="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:padding="1dp"
+            android:background="@drawable/shape_co_listview"
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:textColor="@android:color/white"
+        android:text="保存"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_button_blue"
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<resources>
+
+    <!-- Base application theme.
+    Theme.AppCompat.Light.DarkActionBar-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">#3A3A3A</item>
+        <!-- 设置activity切换动画 -->
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+
+    <!-- animation 样式 -->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="TabLayoutTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/miscro</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+<style name="tv1">
+    <item name="android:gravity">left|center_vertical</item>
+    <item name="android:textColor">@color/text1</item>
+    <item name="android:paddingRight">30dp</item>
+    <item name="android:paddingLeft">5dp</item>
+</style>
+
+    <style name="title_mandatory">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/text1</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:drawableRight">@mipmap/et_mandatory</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+    <style name="tablayout1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">@drawable/bg_divide</item>
+        <item name="android:showDividers">beginning|end|middle</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="tab_row">
+        <item name="android:paddingLeft">@dimen/tab_padding_ver</item>
+        <item name="android:paddingRight">@dimen/tab_padding_ver</item>
+        <item name="android:paddingTop">@dimen/tab_padding_hor</item>
+        <item name="android:paddingBottom">@dimen/tab_padding_hor</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+    <!--android:gravity="center_vertical"-->
+    <!--android:background="@drawable/shape_et_bg"-->
+    <!--android:drawableRight="@mipmap/img_ed"-->
+    <style name="tv2">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableRight">@mipmap/arrow_right</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@color/text2</item>
+        <item name="android:textColor">@color/text3</item>
+        <item name="android:drawablePadding">15dp</item>
+    </style>
+
+    <style name="tv_mandatory">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableRight">@mipmap/arrow_right</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@color/text2</item>
+        <item name="android:textColor">@color/text3</item>
+        <item name="android:drawablePadding">15dp</item>
+
+    </style>
+
+    <style name="tv3">
+        <item name="android:textColor">@color/text1</item>
+    </style>
+
+    <!--<item name="android:background">@drawable/shape_et_bg</item>-->
+<style name="et1">
+    <item name="android:textSize">14sp</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:background">@null</item>
+    <item name="android:paddingLeft">5dp</item>
+    <item name="android:textColorHint">@color/text2</item>
+    <item name="android:textColor">@color/text3</item>
+</style>
+
+    <!--必填项-->
+    <style name="et_mandatory">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColorHint">@color/text2</item>
+        <item name="android:textColor">@color/text3</item>
+    </style>
+
+    <style name="btn1">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/DarkBlue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btn2">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/shape_button</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:minWidth">60dp</item>
+        <item name="android:minHeight">35dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btn3">
+        <item name="android:textColor">@color/blue1</item>
+        <item name="android:background">@drawable/shape_button_2</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:minWidth">60dp</item>
+    </style>
+
+    <style name="btn4">
+        <item name="android:textColor">@color/orange1</item>
+        <item name="android:background">@drawable/shape_button_3</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+    <style name="dialogFullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+</resources>

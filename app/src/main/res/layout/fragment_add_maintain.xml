@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/activity_bg"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <ListView
+            android:divider="@android:color/transparent"
+            android:id="@+id/add_insurance_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/bt_submit"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="预约维修厂"
+            android:textColor="@color/blue1"
+            android:background="@drawable/shape_button_2"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:textColor="#474747"
+        android:layout_margin="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:textSize="13dp"
+        android:text="提示:由车主自行填写,填写后通知维修厂接车员及时沟通出来。"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

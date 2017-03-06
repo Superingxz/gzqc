@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?><!--店铺公告-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="店铺公告编辑" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="店铺公告内容:"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:textSize="15dp"
+        android:id="@+id/notice_centre_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:minHeight="85dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_co_listview"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="公告有效时间:"
+        android:textColor="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/order_time_text">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/f_line"
+            android:background="@drawable/shape_co_listview">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/shart_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/et_img_layout"
+                android:background="@android:color/transparent"
+                android:minHeight="30dp" />
+
+            <RelativeLayout
+                android:id="@+id/et_img_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/maintain_img1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/down_img" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/f_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="一"
+            android:textColor="@android:color/black" />
+
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/f_line"
+            android:background="@drawable/shape_co_listview">
+
+            <TextView
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/et_img_layout2"
+                android:background="@android:color/transparent"
+                android:id="@+id/end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:minHeight="30dp" />
+            <RelativeLayout
+                android:id="@+id/et_img_layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/maintain_img2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/down_img" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_button"
+        android:text="提交"
+        android:textColor="@color/white" />
+</LinearLayout>

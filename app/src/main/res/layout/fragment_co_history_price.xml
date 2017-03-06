@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.xolo.gzqc.ui.view.ScrollListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent" />
+
+
+            <LinearLayout
+                android:id="@+id/co_hi_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_co_listview"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

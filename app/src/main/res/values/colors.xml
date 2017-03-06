@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="tab_notselect">#d9d4d4</color>
+
+    <color name="white">#fff</color>
+    <color name="blue">#00f</color>
+    <color name="blue1">#185ab1</color>
+    <color name="DarkBlue">#015cab</color>
+    <color name="Blue2">#30a6e5</color>
+
+
+    <color name="gray">#9f9f9f</color>
+    <color name="gray1">#a7a7a7</color>
+    <color name="gray2">#cccccc</color>
+    <color name="gray3">#f2f2f2</color>
+
+    <color name="orange1">#EF9C9B</color>
+    <color name="orange2">#e4ac5c</color>
+    <color name="orange3">#FF6801</color>
+
+    <color name="green">#1afa29</color>
+
+    <color name="activity_bg">#55ECECEC</color>
+    <!--<color name="activity_bg">#f2f2f2</color>-->
+    <color name="divider">#DEDEE0</color>
+
+    <color name="red">#f00</color>
+
+    <!--rong-->
+    <color name="main_theme_color">#0195ff</color>
+    <color name="group_list_gray">#999999</color>
+
+    <!--text-->
+    <color name="text1">#dd020202</color>
+    <color name="text2">#A0A0A0</color>
+    <color name="text3">#dd292525</color>
+
+    <!--Camera-->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+     <!--buttomDialog-->
+    <color name="press">#e8e8e8</color>
+    <color name="text_black_color">#333333</color>
+    <color name="text_line_color">#dfdfdd</color>
+    <color name="text_tips_color">#666666</color>
+
+</resources>

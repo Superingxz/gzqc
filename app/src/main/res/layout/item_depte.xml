@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/dept_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/dept_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="顺达一汽维修厂"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/update_dept"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/delete_dept"
+            android:background="@drawable/shape_button_blue"
+            android:text="设为默认"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white" />
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/delete_dept"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_button_blue"
+            android:text="删除"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

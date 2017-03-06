@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation">
+        <item>首页</item>
+        <item>消息</item>
+        <item>工作台</item>
+        <item>个人中心</item>
+    </string-array>
+
+    <string-array name="purchase_reservation">
+        <item>新增预约</item>
+        <item>预约维修进度</item>
+        <item>最近预约维修记录</item>
+    </string-array>
+    
+    <string-array name="appointment_deal">
+        <item>待处理预约车辆</item>
+        <item>最近处理记录</item>
+    </string-array>
+
+    <string-array name="offer">
+        <item>维修清单</item>
+        <item>配件清单</item>
+        <item>历史报价</item>
+    </string-array>
+
+    <string-array name="dispatching">
+        <item>待派工车辆</item>
+        <item>最近3天已派工单</item>
+    </string-array>
+
+    <string-array name="basic_information">
+        <item>车辆列表</item>
+        <item>车辆详细信息</item>
+    </string-array>
+
+    <string-array name="in_the_car_1">
+        <item>待交车车辆</item>
+        <item>最近3天已交车单</item>
+    </string-array>
+
+    <string-array name="complete">
+        <item>待完工车辆</item>
+        <item>最近3天已完工单</item>
+    </string-array>
+
+    <string-array name="in_the_car_2">
+        <item>交车信息</item>
+        <item>维修清单</item>
+        <item>保养提醒</item>
+    </string-array>
+
+    <string-array name="team_situation">
+        <item>我的帮组</item>
+        <item>所以班组</item>
+    </string-array>
+
+    <string-array name="function_list">
+        <item>预约购件</item>
+        <item>预约维修</item>
+        <item>接车</item>
+        <item>报价</item>
+        <item>派工</item>
+        <item>拆检</item>
+        <item>询价</item>
+        <item>购件</item>
+        <item>购件到货</item>
+        <item>班组完工</item>
+        <item>结算交车</item>
+        <item>未付结账</item>
+        <item>进度查询</item>
+        <item>班组情况</item>
+        <item>车主提醒</item>
+        <item>车主资料</item>
+    </string-array>
+    <string-array name="function_list_2">
+        <item>接车</item>
+        <item>报价</item>
+        <item>结算交车</item>
+        <item>未付结账</item>
+        <item>进度查询</item>
+        <item>车主提醒</item>
+        <item>车主资料</item>
+    </string-array>
+
+    <string-array name="registration">
+        <item>快修登记</item>
+        <item>快修登记历史数据</item>
+    </string-array>
+    
+
+    <string-array name="caronerinfo">
+        <item>个人信息</item>
+        <item>安全管理</item>
+        <item>车辆信息</item>
+        <item>送修人信息</item>
+    </string-array>
+
+    <string-array name="procurementDeal">
+        <item>我的待办事项</item>
+        <item>最近三天已办事项</item>
+    </string-array>
+
+
+    <string-array name="team">
+        <item>未完工车辆</item>
+        <item>最近三天已完工车辆</item>
+    </string-array>
+
+    <string-array name="work">
+        <item>维修清单</item>
+        <item>车辆信息</item>
+    </string-array>
+
+    <string-array name="carInfo">
+        <item>车辆信息</item>
+        <item>接车信息</item>
+        <item>报价信息</item>
+        <!--<item>结算信息</item>-->
+    </string-array>
+
+    <string-array name="home_pick">
+        <item>预约购件</item>
+        <item>接车</item>
+        <item>询价</item>
+        <item>报价</item>
+        <item>拆检</item>
+        <item>购件开单</item>
+        <item>进度查询模块</item>
+    </string-array>
+
+
+
+    <!--2、采购员返回：我的待办事项、维修进度、历史报价、历史购件模块-->
+    <!--3、班组返回：未完工车辆、历史维修、维修接班、维修进度模块-->
+    <string-array name="home_procurement">
+        <item>我的待办事项</item>
+        <item>维修进度</item>
+        <item>历史报价</item>
+        <item>历史购件模块</item>
+    </string-array>
+
+    <string-array name="home_team">
+        <item>未完工车辆</item>
+        <item>历史维修</item>
+        <!--<item>维修接班</item>-->
+        <item>维修进度</item>
+    </string-array>
+
+</resources>

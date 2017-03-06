@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.activity.pickcar.PickUpCarActivity">
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="接车单详情"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TableLayout
+                    style="@style/tablayout1"
+                    >
+
+                    <TableRow
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            style="@style/tv1"
+                            android:text="车牌号"
+                            />
+
+                        <TextView
+                            android:id="@+id/carno"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:maxLength="7"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            style="@style/tv1"
+                            android:text="联系人"
+                            />
+                        <TextView
+                            android:id="@+id/name"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            style="@style/tv1"
+                            android:text="联系人手机"
+                            />
+                        <TextView
+                            android:id="@+id/phone"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:visibility="gone"
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            style="@style/tv1"
+                            android:text="联系人:"
+                            />
+                        <EditText
+                            android:id="@+id/link_name"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:visibility="gone"
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            style="@style/tv1"
+                            android:text="联系人手机:"
+                            />
+                        <EditText
+                            android:id="@+id/link_phone"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            style="@style/tv1"
+                            android:text="送修人"
+                            />
+                        <TextView
+                            android:id="@+id/name_send"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            style="@style/tv1"
+                            android:text="送修人手机"
+                            />
+                        <TextView
+                            android:id="@+id/phone_send"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:visibility="gone"
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            style="@style/tv1"
+                            android:text="提车人:"
+                            />
+                        <EditText
+                            android:id="@+id/get_car_name"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:visibility="gone"
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            style="@style/tv1"
+                            android:text="提车人手机:"
+                            />
+                        <EditText
+                            android:id="@+id/get_car_phone"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            />
+
+                    </TableRow>
+
+                    <!--联系人姓名:link_name,联系人手机号:link_phone,提车人姓名:get_car_name,提车人手机号:get_car_phone-->
+                    <TableRow
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            android:text="品牌"
+                            style="@style/tv1"
+                            />
+                        <TextView
+                            android:id="@+id/brand"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            />
+
+                    </TableRow>
+
+
+                    <TableRow
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            android:text="车型"
+                            style="@style/tv1"
+                            />
+                        <TextView
+                            android:id="@+id/typecode"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            android:text="行驶里程"
+                            style="@style/tv1"
+                            />
+                        <TextView
+                            android:id="@+id/mileage"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            android:text="油量"
+                            style="@style/tv1"
+                            />
+                        <TextView
+                            style="@style/et1"
+                            android:id="@+id/oil"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            />
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_marginLeft="10dp"
+                            android:src="@mipmap/tab_found"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:scaleType="fitXY"
+                            />
+
+                    </TableRow>
+
+
+                    <TableRow
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            android:text="进厂时间"
+                            style="@style/tv1"
+                            />
+                        <TextView
+                            android:id="@+id/in_time"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            />
+
+                    </TableRow>
+
+
+                    <TableRow
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            android:text="预交车时间"
+                            style="@style/tv1"
+                            />
+                        <TextView
+                            android:id="@+id/book_time"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        style="@style/tab_row"
+                        >
+                        <TextView
+                            android:text="接车员"
+                            style="@style/tv1"
+                            />
+                        <TextView
+                            android:id="@+id/receive_name"
+                            style="@style/et1"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            />
+
+                    </TableRow>
+
+
+                    <!--<TableRow-->
+                    <!--style="@style/tab_row"-->
+                    <!--&gt;-->
+                    <!--<TextView-->
+                    <!--android:text="车况记录:"-->
+                    <!--style="@style/tv1"-->
+                    <!--/>-->
+
+                    <!--<TextView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--/>-->
+
+                    <!--<TextView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--/>-->
+
+                    <!--<Button-->
+                    <!--android:id="@+id/btn_part"-->
+                    <!--style="@style/btn1"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:text="随车附件"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--/>-->
+
+                    <!--<Button-->
+                    <!--android:id="@+id/btn_histroy"-->
+                    <!--style="@style/btn1"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:text="历史维修"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--/>-->
+
+                    <!--<ImageButton-->
+                    <!--android:id="@+id/btn_add"-->
+                    <!--android:background="@mipmap/add"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--/>-->
+
+                    <!--</TableRow>-->
+                </TableLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="车况记录"
+                        style="@style/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/DarkBlue"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_part"
+                        style="@style/btn1"
+                        android:layout_height="20dp"
+                        android:text="随车附件"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        />
+
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    >
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/shape_et_bg"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="类别"
+                                android:textColor="@color/text1"
+                                />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray2"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="具体描述"
+                                android:textColor="@color/text1"
+                                />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray2"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="照片"
+                                android:textColor="@color/text1"
+                                />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray2"
+                            />
+
+                        <com.xolo.gzqc.ui.view.ScrollListView
+                            android:id="@+id/lv"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="维修描述："
+                        android:textColor="@color/DarkBlue"
+                        />
+
+
+                    <CheckBox
+                        android:clickable="false"
+                        android:id="@+id/is_save_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="保存描述"
+                        android:textSize="12sp"
+                        android:layout_marginRight="10dp"
+                        android:checked="true"
+                        />
+
+                    <TextView
+                        android:background="@drawable/shape_et_bg"
+                        style="@style/et1"
+                        android:id="@+id/description"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/is_save_des"
+                        />
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:clickable="false"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/is_rework"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="属于返修"
+                        android:textColor="@color/text1"
+                        android:textSize="12sp"
+                        android:clickable="false"
+                        />
+
+                    <CheckBox
+                        android:clickable="false"
+                        android:id="@+id/is_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="同意拆检"
+                        android:textColor="@color/text1"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="20dp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/confirm"
+                    style="@style/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="打印"
+                    android:layout_margin="30dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

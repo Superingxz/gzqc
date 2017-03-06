@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/activity_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.activity.pickcar.InquiryActivity">
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="进度查询"
+        />
+
+    <com.xolo.gzqc.ui.view.ExScrollView
+        android:id="@+id/esv"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/activity_bg"
+            >
+
+            <TableLayout
+                style="@style/tablayout1"
+                >
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="车牌号"
+                        />
+                    <EditText
+                        android:id="@+id/car_nunber"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:hint="输入车牌"
+                        />
+
+
+
+                </TableRow>
+
+
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="联系人"
+                        />
+                    <EditText
+                        android:id="@+id/name"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:hint="输入车主姓名"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="联系人手机"
+                        />
+                    <EditText
+                        android:id="@+id/phone"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:hint="输入车主手机"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="当前状态"
+                        />
+                    <TextView
+                        android:id="@+id/tv_status"
+                        style="@style/tv2"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:hint="选择状态"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+
+                <com.xolo.gzqc.ui.view.ScrollListView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/activity_bg"
+                    android:divider="@color/activity_bg"
+                    android:dividerHeight="5dp"
+                    />
+
+
+        </LinearLayout>
+
+    </com.xolo.gzqc.ui.view.ExScrollView>
+
+<include layout="@layout/merge_return_top"/>
+
+    <include layout="@layout/merge_keyboardview"/>
+
+</RelativeLayout>

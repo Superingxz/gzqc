@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xolo.gzqc">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 登录 -->
+        <activity android:name=".ui.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 忘记密码 -->
+        <activity android:name=".ui.activity.PasswordActivity" />
+        <activity android:name=".zxing.camera.CameraActivityCapture" />
+        <!-- 角色选择 -->
+        <activity android:name=".ui.activity.RoleActivity" />
+        <!-- 查看图片 -->
+        <activity android:name=".ui.activity.PhotoActivity" />
+        <!-- 添加车品牌 -->
+        <activity android:name=".ui.activity.CarBrandActivity" />
+        <!-- 用户帮助 -->
+        <activity android:name=".ui.activity.HelpActivity" />
+        <!-- 修改密码 -->
+        <activity android:name=".ui.activity.EditPasswordActivity" />
+        <!-- 登录后选择模块 -->
+        <activity android:name=".ui.activity.SelectModelActivity" />
+        <!-- 版本更新 -->
+        <activity android:name=".ui.activity.CheckVersionActivity" />
+
+        <!-- 注册start -->
+        <!-- 注册引导页面 -->
+        <activity android:name=".ui.activity.register.RegisterActivity" />
+        <!-- 供应商注册 -->
+        <activity android:name=".ui.activity.register.RegisterSupplierActivity" />
+        <!-- 注册维修厂 -->
+        <activity android:name=".ui.activity.register.RegisterDeftActivity" />
+        <!-- 消费者注册 -->
+        <activity android:name=".ui.activity.register.RegisterConsumersActivity" />
+        <!-- 注册end -->
+
+
+        <!-- 接车员start -->
+        <!-- 接车员主页面 -->
+        <activity
+            android:name=".ui.activity.pickcar.FuntionActivity"
+            android:launchMode="singleTask" />
+        <!-- 预约购件 -->
+        <activity android:name=".ui.activity.pickcar.PurchaseReservationActivity" />
+        <!-- 添加预约构件配件 -->
+        <activity android:name=".ui.activity.pickcar.AddPurchaseReservationParts" />
+
+        <!-- 车辆综合信息 -->
+        <activity android:name=".ui.activity.pickcar.CarInfoActivity" />
+        <!-- 车辆综合信息 读取接车信息详情 -->
+        <activity android:name=".ui.activity.pickcar.ReadPickUpActivity" />
+
+        <!-- 预约维修 -->
+        <activity android:name=".ui.activity.pickcar.DealAppointmentActivity" />
+
+        <!-- 接车 -->
+        <activity android:name=".ui.activity.pickcar.PickUpCarActivity" />
+        <!-- 新增车况记录 -->
+        <activity android:name=".ui.activity.pickcar.AddCarStateActivity" />
+        <!-- 随车附件 -->
+        <activity android:name=".ui.activity.pickcar.ReceiveannexActivity" />
+
+        <!-- 拆检 -->
+        <activity android:name=".ui.activity.pickcar.VerhaulActivity" />
+        <!-- 添加拆检配件 -->
+        <activity android:name=".ui.activity.pickcar.AddPartVerhaulActivity" />
+        <!-- 拆检 -->
+        <activity android:name=".ui.activity.pickcar.AddPart3" />
+
+        <!-- 询价 -->
+        <activity android:name=".ui.activity.pickcar.InquiryActivity" />
+        <!-- 添加询价配件 -->
+        <activity android:name=".ui.activity.pickcar.AddInquiryParts" />
+
+        <!-- 报价 -->
+        <activity android:name=".ui.activity.pickcar.OfferActivity" />
+        <!-- 添加报价项目 -->
+        <activity android:name=".ui.activity.pickcar.AddOfferItemActivity" />
+        <!-- 添加报价项目配件 -->
+        <activity android:name=".ui.activity.pickcar.AddofferParts" />
+
+        <!-- 车主资料 -->
+        <activity android:name=".ui.activity.pickcar.OwnerInfoActivity" />
+        <!-- 添加车辆 -->
+        <activity android:name=".ui.activity.pickcar.AddCarInfoActivity" />
+        <!-- 预约详细信息 -->
+        <activity android:name=".ui.activity.pickcar.BookingDetailsActivity" />
+        <!-- 派工 -->
+        <activity android:name=".ui.activity.pickcar.DispatchingActivity" />
+        <!-- 维修清单 -->
+        <activity android:name=".ui.activity.pickcar.MaintenanceListActivity" />
+
+        <!-- 添加构件配件 -->
+        <activity android:name=".ui.activity.pickcar.AddOrderPurchaseParts" />
+        <!-- 购件 -->
+        <activity android:name=".ui.activity.pickcar.OrderPurchaseActivity" />
+
+        <!-- 构件到货 -->
+        <activity android:name=".ui.activity.pickcar.ArrivalGoodsActivity" />
+        <!-- 进度查询 -->
+        <activity android:name=".ui.activity.pickcar.ProgressActivity" />
+        <!-- 进度查询详情 -->
+        <activity android:name=".ui.activity.pickcar.MaintenanceList_2Activity" />
+        <!-- 班组情况 -->
+        <activity android:name=".ui.activity.pickcar.TeamActivity" />
+        <!-- 未付结账 -->
+        <activity android:name=".ui.activity.pickcar.PaymentActivity" />
+        <!-- 未付结账详情 -->
+        <activity android:name=".ui.activity.pickcar.PayDetailsActivity" />
+
+        <!-- 车主提醒 -->
+        <activity android:name=".ui.activity.pickcar.NewsActivity" />
+        <!-- 交车 -->
+        <activity android:name=".ui.activity.pickcar.ReturnCarActivity" />
+        <!-- 完工 -->
+        <activity android:name=".ui.activity.pickcar.CompleteActivity" />
+        <!-- 完工详情 -->
+        <activity android:name=".ui.activity.pickcar.CompleteDetailActivity" />
+
+        <!-- 构件到货历史 -->
+        <activity android:name=".ui.activity.pickcar.VerhaulHistroyActivity" />
+        <!-- 历史询价 -->
+        <activity android:name=".ui.activity.pickcar.InquiryHistroyActivity" />
+        <!-- 购机开单历史 -->
+        <activity android:name=".ui.activity.pickcar.OrderPurchseHistroyActivity" />
+        <!-- 接车员end -->
+
+
+        <!-- 车主模块 -->
+        <activity android:name=".ui.activity.CarOwnersActivity" />
+        <!-- 车主服务 -->
+        <activity android:name=".ui.activity.CarOwnersServiceActivity" />
+        <!-- 车主服务-保险业务 -->
+        <activity android:name=".ui.activity.CarOwnersInsuranceActivity" />
+        <!-- 车主服务-预约维修 -->
+        <activity android:name=".ui.activity.MaintainSubscribeActivity" />
+        <!-- 车主服务-我的预约维修 -->
+        <activity android:name=".ui.activity.CarOwnerseMaintainActivity" />
+        <!-- 购物付款确定 -->
+        <activity android:name=".ui.activity.CarOwnersScheduleActivity" />
+        <!-- 价格确认 -->
+        <activity android:name=".ui.activity.Co_PriceConfirm" />
+        <!-- 历史预约维修记录 -->
+        <activity android:name=".ui.activity.OcMaintainRecordActivity" />
+        <!-- 车主修改密码 -->
+        <activity android:name=".ui.activity.CoPasswrodActivity" />
+        <!-- 救援出险 -->
+        <activity android:name=".ui.activity.RescueActivity" />
+        <!-- 服务小类内容 -->
+        <activity android:name=".ui.activity.CoServiceChildActivity" />
+        <!-- 道路出险 -->
+        <activity android:name=".ui.activity.CoRoadInsuranceActivity" />
+        <!-- 车辆出险 -->
+        <activity android:name=".ui.activity.CoRescueInsuranceActivity" />
+        <!-- 维修进度 -->
+        <activity android:name=".ui.activity.CoMaintainPrograssActivity" />
+        <!-- 我的维修详情 -->
+        <activity android:name=".ui.activity.CoMaintainDetails" />
+        <!-- 切换维修厂 -->
+        <activity android:name=".ui.activity.UpdateDepActivity" />
+        <!-- rong  start -->
+        <activity android:name=".rong.MainActivity" />
+        <!-- 会话页面 -->
+        <activity
+            android:name=".rong.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.xolo.gzqc"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!-- 地图 -->
+        <activity android:name=".rong.AMAPLocationActivity" />
+        <!-- 高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="ed799b536b7fef388d8d58037c402cf5" />
+        <!-- 搜索好友 -->
+        <activity android:name=".rong.SearchFriendActivity" />
+        <!-- 新的好友 -->
+        <activity android:name=".rong.NewFriendActivity" />
+        <!-- rong end -->
+
+
+        <!-- 采购员start -->
+        <!-- 采购主页面 -->
+        <activity android:name=".ui.activity.procurement.ProcurementMainActivity" />
+        <!-- 历史报价 -->
+        <activity android:name=".ui.activity.procurement.QueryOfferActivity" />
+        <!-- 历史购件 -->
+        <activity android:name=".ui.activity.procurement.QueryPairActivity" />
+        <!-- 采购员end -->
+
+
+        <!-- 班组start -->
+        <!-- 班组主页 -->
+        <activity android:name=".ui.activity.team.TeamMainActivity" />
+        <!-- 历史维修 -->
+        <activity android:name=".ui.activity.team.MaintenanceHistroyActivity" />
+        <!-- 完工 -->
+        <activity android:name=".ui.activity.team.Complete_2Activity" />
+        <!-- 完工详情 -->
+        <activity android:name=".ui.activity.team.CompleteDetail_2Activity" />
+        <!-- 历史维修配件 -->
+        <activity android:name=".ui.activity.team.MaintenanceList_3Activity" />
+        <!-- 班组end -->
+
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+        <!-- 自动更新 -->
+        <service android:name=".service.UpdateService" />
+
+        <!-- 消费者start -->
+        <!-- 消费者主页面 -->
+        <activity
+            android:name=".ui.activity.consumers.ConsumersActivity"
+            android:launchMode="singleTask" />
+        <!-- 搜索 -->
+        <activity android:name=".ui.activity.consumers.SearchResultActivity" />
+        <!-- 搜索 -->
+        <activity android:name=".ui.activity.consumers.SearchActivity" />
+        <!-- 更多商品分类 -->
+        <activity android:name=".ui.activity.consumers.MoreActivity" />
+        <!-- 产品信息 -->
+        <activity android:name=".ui.activity.consumers.GoodsInfoActivity" />
+        <!-- 提交订单 -->
+        <activity android:name=".ui.activity.consumers.SubmitOrderActivity" />
+        <!-- 管理收货地址 -->
+        <activity android:name=".ui.activity.consumers.AddressManagerActivity" />
+        <!-- 增加和修改收货地址 -->
+        <activity android:name=".ui.activity.consumers.EditAddressActivity" />
+        <!-- 店铺 -->
+        <activity android:name=".ui.activity.consumers.StoreActivity" />
+        <!-- 订单评论 -->
+        <activity android:name=".ui.activity.EvaluationActivity" />
+        <!-- 物流详情 -->
+        <activity android:name=".ui.activity.consumers.LogisticsActivity" />
+        <!-- 订单付款 -->
+        <activity android:name=".ui.activity.consumers.ConsumerPayActivity" />
+        <!-- 申请退款 -->
+        <activity android:name=".ui.activity.consumers.ApplyRefuceActivity" />
+        <!-- 消费者end -->
+        <activity android:name=".ui.activity.supplier.GoodsDetailsActivity" />
+        <!-- 供应商start -->
+        <activity android:name=".ui.activity.supplier.ShopFitmentActivity" />
+        <activity android:name=".ui.activity.supplier.LogisticsActivity" />
+        <activity android:name=".ui.activity.supplier.NoticeActivity" />
+        <activity android:name=".ui.activity.supplier.GoodsSellActivity" />
+        <activity android:name=".ui.activity.supplier.SupplierActivity" />
+        <activity android:name=".ui.activity.supplier.OrderCentreActivity" />
+        <activity android:name=".ui.activity.supplier.SeleteOrderActivity" />
+        <!-- 供应商end -->
+
+
+        <!-- 我是老板 start -->
+        <!-- 主页 -->
+        <activity android:name=".ui.activity.boss.BossMainActivity"/>
+        <activity android:name=".ui.activity.boss.DataAnalysisActivity" />
+        <!-- 数据分析 -->
+        <activity android:name=".ui.activity.boss.SearchDataAnalysisActivity" />
+        <!-- 预约购件明细 -->
+        <activity android:name=".ui.activity.boss.PurchaseReservationDetailedActivity" />
+        <!-- 自主预约明细 -->
+        <activity android:name=".ui.activity.boss.DealAppointmentDetailedActivity" />
+        <!-- 接车明细 -->
+        <activity android:name=".ui.activity.boss.PickUpCarDetailActivity" />
+        <!-- 报价明细 -->
+        <activity android:name=".ui.activity.boss.OfferDetailActivity" />
+        <!-- 采购明细 -->
+        <activity android:name=".ui.activity.boss.BuymDetailActivity" />
+        <!-- 维修中明细 -->
+        <activity android:name=".ui.activity.boss.RepairdetailActivity" />
+        <!-- 完工明细 -->
+        <activity android:name=".ui.activity.boss.FinishDetailActivity" />
+        <!-- 交车明细 -->
+        <activity android:name=".ui.activity.boss.OutcarDetailActivity" />
+        <!-- 结算金额明细 -->
+        <activity android:name=".ui.activity.boss.SettledDetailActivity" />
+        <!-- 未结算金额明细 -->
+        <activity android:name=".ui.activity.boss.UnsettledDetailActivity" />
+        <!-- 实收金额明细 -->
+        <activity android:name=".ui.activity.boss.ReceiptsDetailActivity" />
+        <!-- 我是老板 end -->
+
+        <!-- 我是管理员 start -->
+        <!-- 管理员首页 -->
+        <activity android:name=".ui.activity.administrator.AdministratorMainActivity" />
+        <!-- 添加员工 -->
+        <activity android:name=".ui.activity.administrator.AddEmployActivity" />
+        <!-- 编辑员工信息 -->
+        <activity android:name=".ui.activity.administrator.EditEmployeeActivity" />
+        <!-- 员工权限 -->
+        <activity android:name=".ui.activity.administrator.PermissionActivity" />
+        <!-- 添加角色权限 -->
+        <activity android:name=".ui.activity.administrator.AddRolePermissionActivity" />
+        <!-- 添加数据权限 -->
+        <activity android:name=".ui.activity.administrator.AddDataPermissionActivity" />
+        <!-- 我是管理员 end -->
+
+    </application>
+
+</manifest>

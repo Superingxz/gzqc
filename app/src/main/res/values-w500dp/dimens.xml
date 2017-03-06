@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--接车首页-->
+    <dimen name="main_item_text_size">14sp</dimen>
+    <dimen name="main_item_iv">60dp</dimen>
+
+    <!--style name="tab_row"-->
+    <dimen name="tab_padding_ver">12dp</dimen>
+    <dimen name="tab_padding_hor">20dp</dimen>
+
+    <dimen name="main_topheigh">120dp</dimen>
+</resources>

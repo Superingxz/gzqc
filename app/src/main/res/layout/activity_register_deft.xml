@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xolo.gzqc.ui.activity.register.RegisterSupplierActivity">
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="维修厂申请入驻"
+        />
+
+    <ScrollView
+    android:id="@+id/sv"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@color/activity_bg"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_top"
+            android:orientation="vertical"
+            android:paddingBottom="50dp"
+            >
+
+            <com.xolo.gzqc.ui.view.ExEditText
+                android:id="@+id/eet_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle="维修厂名称"
+                app:hintContent="请输入"
+                app:leftwith="95"
+                />
+            <com.xolo.gzqc.ui.view.ExEditText
+                android:id="@+id/eet_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle="法人姓名"
+                app:hintContent="请输入"
+                app:leftwith="95"
+                />
+            <com.xolo.gzqc.ui.view.ExEditText
+                android:id="@+id/eet_identity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle="身份证号"
+                app:hintContent="请输入"
+                app:leftwith="95"
+                />
+            <com.xolo.gzqc.ui.view.ExEditText
+                android:visibility="gone"
+                android:id="@+id/eet_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle="登录密码"
+                app:hintContent="请输入"
+                app:leftwith="95"
+                />
+            <com.xolo.gzqc.ui.view.ExEditText
+                android:id="@+id/eet_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle="联系电话"
+                app:hintContent="请输入"
+                app:leftwith="95"
+                />
+            <com.xolo.gzqc.ui.view.ExEditText
+                android:id="@+id/eet_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle=""
+                app:hintContent="请输入验证码"
+                app:textBtn="获取验证码"
+                app:leftwith="95"
+                />
+
+
+
+
+
+            <com.xolo.gzqc.ui.view.ExEditText
+                android:id="@+id/eet_province"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle="省"
+                app:hintContent="请选择"
+                app:showArrow="true"
+                app:leftwith="95"
+                />
+            <com.xolo.gzqc.ui.view.ExEditText
+                android:id="@+id/eet_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle="市"
+                app:hintContent="请选择"
+                app:showArrow="true"
+                app:leftwith="95"
+                />
+            <com.xolo.gzqc.ui.view.ExEditText
+                android:id="@+id/eet_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle="区县"
+                app:hintContent="请选择"
+                app:showArrow="true"
+                app:leftwith="95"
+                />
+
+            <com.xolo.gzqc.ui.view.ExEditText
+                android:id="@+id/eet_stree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle="乡镇街道"
+                app:hintContent="请输入"
+                app:leftwith="95"
+                />
+            <com.xolo.gzqc.ui.view.ExEditText
+                android:id="@+id/eet_lian_suo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle="是否连锁"
+                app:content="否"
+                app:leftwith="95"
+                app:showArrow="true"
+                />
+            <com.xolo.gzqc.ui.view.ExEditText
+                android:visibility="gone"
+                android:id="@+id/eet_zhong_bu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle="连锁总部"
+                app:content="请选择"
+                app:showArrow="true"
+                app:leftwith="95"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    style="@style/tv1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="法人身份证"
+                    />
+                <TextView
+                    style="@style/tv1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="公司三证"
+                    android:layout_marginLeft="0dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:id="@+id/btn_add_legal_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@mipmap/add_photo"
+                        />
+                    <ImageView
+                        android:id="@+id/iv_legal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="60dp"
+                        android:scaleType="fitXY"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:id="@+id/btn_add_company_photo"
+                        android:src="@mipmap/add_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <ImageView
+                        android:id="@+id/iv_company"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="60dp"
+                        android:scaleType="fitXY"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    style="@style/tv1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="排污许可证"
+                    />
+                <TextView
+                    style="@style/tv1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="道路运输经营许可证"
+                    android:layout_marginLeft="0dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:id="@+id/btn_add_pw_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@mipmap/add_photo"
+                        />
+                    <ImageView
+                        android:id="@+id/iv_pw"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="60dp"
+                        android:scaleType="fitXY"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:id="@+id/btn_add_dl_photo"
+                        android:src="@mipmap/add_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <ImageView
+                        android:id="@+id/iv_dl"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="60dp"
+                        android:scaleType="fitXY"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="其他证书（最多三个，非必须项）"
+                android:textColor="@color/text1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+                <ImageView
+                    android:id="@+id/btn_add_else_photo"
+                    android:src="@mipmap/add_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <ImageView
+                    android:id="@+id/iv_else_photo_1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="60dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="60dp" />
+                <ImageView
+                    android:id="@+id/iv_else_photo_2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="60dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="60dp" />
+                <ImageView
+                    android:id="@+id/iv_else_photo_3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="60dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="60dp" />
+
+            </LinearLayout>
+
+            <Button
+                style="@style/btn2"
+                android:id="@+id/btn_commin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="30dp"
+                android:text="提交"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

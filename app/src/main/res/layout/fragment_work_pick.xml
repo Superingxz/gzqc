@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.xolo.gzqc.ui.fragment.WorkPickFragment">
+
+
+   <com.xolo.gzqc.ui.view.TitleView
+       android:id="@+id/titleview"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       app:mtitle="工作台"
+       />
+
+   <com.xolo.gzqc.ui.view.TabView
+       android:id="@+id/tabview"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:divider="@null"
+       />
+
+</LinearLayout>

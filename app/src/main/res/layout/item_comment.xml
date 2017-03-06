@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/delect_good"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="钟二龙"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-11-18"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="质量杠杠的"
+        android:textColor="@color/text1"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

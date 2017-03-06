@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.activity.pickcar.InquiryActivity">
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="历史购件查询"
+        />
+
+    <com.xolo.gzqc.ui.view.ExScrollView
+        android:id="@+id/esv"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_bg"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/activity_bg"
+        >
+
+        <TableLayout
+            style="@style/tablayout1"
+            >
+
+            <TableRow
+                style="@style/tab_row"
+                >
+                <TextView
+                    style="@style/tv1"
+                    android:text="车牌号"
+                    />
+                <EditText
+                    android:id="@+id/car_nunber"
+                    style="@style/et1"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:hint="输入车牌"
+                    />
+
+
+
+            </TableRow>
+
+
+            <TableRow
+                style="@style/tab_row"
+                >
+                <TextView
+                    style="@style/tv1"
+                    android:text="品牌"
+                    />
+                <EditText
+                    android:id="@+id/brand"
+                    style="@style/tv2"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:hint="输入品牌"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    />
+
+            </TableRow>
+
+
+            <TableRow
+                style="@style/tab_row"
+                >
+                <TextView
+                    style="@style/tv1"
+                    android:text="车型"
+                    />
+                <EditText
+                    android:id="@+id/type"
+                    style="@style/et1"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:hint="输入车型"
+                    />
+
+            </TableRow>
+
+
+            <TableRow
+                style="@style/tab_row"
+                >
+                <TextView
+                    android:id="@+id/part_name"
+                    style="@style/tv1"
+                    android:text="配件名称"
+                    />
+                <EditText
+                    android:id="@+id/part"
+                    style="@style/et1"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:hint="输入配件名称"
+                    />
+
+            </TableRow>
+
+
+            <TableRow
+                style="@style/tab_row"
+                >
+                <TextView
+                    style="@style/tv1"
+                    android:text="购件时间"
+                    />
+                <TextView
+                    android:id="@+id/date_start"
+                    style="@style/tv2"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:hint="开始时间"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                style="@style/tab_row"
+                >
+                <TextView
+                    style="@style/tv1"
+                    />
+                <TextView
+                    android:id="@+id/date_end"
+                    style="@style/tv2"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:hint="结束时间"
+                    />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <com.xolo.gzqc.ui.view.ScrollListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            />
+    </LinearLayout>
+
+
+    </com.xolo.gzqc.ui.view.ExScrollView>
+
+    <include   layout="@layout/merge_return_top"/>
+
+    <include layout="@layout/merge_keyboardview"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.activity.pickcar.InquiryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_bg"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/activity_bg"
+            >
+
+            <TableLayout
+                android:layout_marginTop="20dp"
+                style="@style/tablayout1"
+                >
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/title_mandatory"
+                        android:text="车牌号 "
+                        />
+                    <EditText
+                        android:id="@+id/car_nunber"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:hint="选择车牌"
+                        />
+
+                    <Button
+                        android:id="@+id/select"
+                        style="@style/btn2"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="查询"
+                        />
+
+
+                </TableRow>
+
+
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="品牌"
+                        />
+                    <EditText
+                        android:id="@+id/brand"
+                        style="@style/tv2"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:hint="长按可手动输入"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="型号"
+                        />
+                    <EditText
+                        android:id="@+id/models"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:hint="长按可手动输入"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:visibility="gone"
+                    android:id="@+id/tb_query_name"
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="询价人"
+                        />
+                    <TextView
+                        android:id="@+id/query_name"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:hint="无"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:visibility="gone"
+                    android:id="@+id/tb_replay_name"
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="报价人"
+                        />
+                    <TextView
+                        android:id="@+id/replay_name"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:visibility="gone"
+                    android:id="@+id/tb_replay_time"
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="报价时间"
+                        />
+                    <TextView
+                        android:id="@+id/replay_time"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:visibility="gone"
+                    android:id="@+id/tb_valid_time_read"
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="有效时间"
+                        />
+                    <TextView
+                        android:id="@+id/valid_time_read"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:visibility="gone"
+                    android:id="@+id/tb_vaild_time"
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="有效时间"
+                        />
+                    <TextView
+                        android:id="@+id/vaild_time"
+                        style="@style/tv2"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:hint="报价有效时间"
+                        />
+
+                </TableRow>
+
+                <RelativeLayout
+                    style="@style/tab_row"
+                    >
+
+                    <TextView
+                        android:id="@+id/btn_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="显示更多"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@mipmap/right_img"
+                        />
+
+                </RelativeLayout>
+
+
+            </TableLayout>
+
+
+
+
+            <TableLayout
+                style="@style/tablayout1"
+                android:visibility="gone"
+                android:id="@+id/tl_hidden"
+                android:layout_marginTop="20dp"
+                >
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="排量"
+                        />
+                    <TextView
+                        android:hint="选择车型"
+                        android:id="@+id/displacement"
+                        style="@style/tv2"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="年份"
+                        />
+                    <TextView
+                        android:hint="选择年份"
+                        android:id="@+id/year"
+                        style="@style/tv2"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:maxLength="4"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="驱动"
+                        />
+                    <TextView
+                        android:hint="选择驱动"
+                        android:id="@+id/drive"
+                        style="@style/tv2"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="燃料"
+                        />
+                    <TextView
+                        android:hint="选择燃料"
+                        android:id="@+id/fuel"
+                        style="@style/tv2"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="操控"
+                        />
+                    <TextView
+                        android:hint="选择操控"
+                        android:id="@+id/operation"
+                        style="@style/tv2"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        />
+
+                </TableRow>
+
+
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="VIN码"
+                        />
+                    <EditText
+                        android:hint="填写VIN码"
+                        android:id="@+id/vin_code"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:maxLength="17"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="发动机号"
+                        />
+                    <EditText
+                    android:hint="填写发动机号"
+                        android:id="@+id/engine"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:maxLength="17"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="注册日期"
+                        />
+                    <TextView
+                        android:hint="选择日期"
+                        android:id="@+id/login_data"
+                        style="@style/tv2"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/tr"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="询价人:"
+                        />
+                    <EditText
+                        android:id="@+id/name"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:maxLength="36"
+                        />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配件清单:"
+                    android:textColor="@color/DarkBlue"
+                    android:layout_centerVertical="true"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_add"
+                    android:background="@mipmap/add"
+                    android:layout_height="25dp"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/DarkBlue"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:background="@color/white"
+
+                >
+
+                <com.xolo.gzqc.ui.view.ScrollListView
+                    android:id="@+id/lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/confirm"
+                    style="@style/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="20dp"
+                    android:text="配件询价"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:focusable="true"
+            android:paddingTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:focusableInTouchMode="true"
+            android:background="#F0EFF4"
+            android:keyBackground="@android:color/white"
+            android:keyTextColor="#5E5E5E"
+            android:shadowColor="#ffffff"
+            android:shadowRadius="0.0"
+            android:keyPreviewLayout="@layout/key_preview_layout"
+            android:keyTextSize="18sp"
+            android:labelTextSize="18sp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

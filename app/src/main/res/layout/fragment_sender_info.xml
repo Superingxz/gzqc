@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/maintain_text1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="right"
+                android:text="车牌号："
+                android:textColor="@color/text1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/maintain_text1"
+                android:background="@drawable/shape_et_bg">
+
+                <TextView
+                    android:id="@+id/maintain_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/et_img_layout"
+                    android:background="@null"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="5dp"
+                    android:textSize="14dp" />
+
+                <RelativeLayout
+                    android:id="@+id/et_img_layout"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:id="@+id/maintain_img1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/down_img" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.xolo.gzqc.ui.view.ScrollListView
+            android:id="@+id/co_project_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_co_listview" />
+
+        <com.xolo.gzqc.ui.view.ScrollListView
+            android:id="@+id/co_project_car_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_co_listview" />
+
+        <Button
+            android:id="@+id/add_sender_info"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_button_blue"
+            android:text="新增送修人"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

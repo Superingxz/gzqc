@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?><!--订单中心-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical">
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="订单中心" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/goods_name_text"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="商品名称:"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/order_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/goods_name_text"
+                android:background="@drawable/shape_co_listview"
+                android:gravity="center_vertical"
+                android:minHeight="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/goods_no_text"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="订单号:"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/goods_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/goods_no_text"
+                android:background="@drawable/shape_co_listview"
+                android:minHeight="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/order_time_text"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="订单时间:"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:id="@+id/time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/order_time_text">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/f_line"
+                    android:background="@drawable/shape_co_listview">
+
+                    <TextView
+                        android:id="@+id/shart_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_toLeftOf="@+id/delete_img1"
+                        android:gravity="center"
+                        android:minHeight="30dp" />
+
+                    <ImageView
+                        android:id="@+id/delete_img1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/delete_img" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/f_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="一" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/f_line"
+                    android:background="@drawable/shape_co_listview">
+
+                    <TextView
+                        android:id="@+id/end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_toLeftOf="@+id/delete_img2"
+                        android:gravity="center"
+                        android:minHeight="30dp" />
+
+                    <ImageView
+                        android:id="@+id/delete_img2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/delete_img" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_button_2"
+            android:text="查询"
+            android:textColor="@color/blue1" />
+    </LinearLayout>
+
+
+    <com.xolo.gzqc.ui.view.TabView
+        android:id="@+id/tab_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white" />
+</LinearLayout>

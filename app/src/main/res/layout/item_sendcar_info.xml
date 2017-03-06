@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:id="@+id/send_info_layout"
+        android:background="@drawable/item_carowner_shape"
+        android:orientation="vertical"
+       android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="14dp"
+                android:id="@+id/sendcar_name_text"
+                android:layout_alignParentLeft="true"
+                android:text="姓名："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
+
+
+            <TextView
+                android:textSize="14dp"
+                android:id="@+id/sendcar_name"
+                android:layout_toRightOf="@+id/sendcar_name_text"
+                android:text="罗伟"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:textSize="14dp"
+                android:id="@+id/sendcar_sex"
+                android:layout_marginRight="10dp"
+                android:text="男"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="12dp"
+                android:text="手机号1："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:textSize="12dp"
+                android:id="@+id/sender_num_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textSize="12dp"
+                android:text="手机号2："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:textSize="12dp"
+                android:id="@+id/sender_num_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_info_img_layout"
+        android:visibility="gone"
+        android:background="@drawable/item_carowner_shape"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="120dp">
+        <ImageView
+            android:id="@+id/add_info_img"
+            android:layout_width="80dp"
+            android:src="@mipmap/addinfo"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+</LinearLayout>

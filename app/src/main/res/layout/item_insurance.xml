@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="1.机动车整车出厂合格证"
+        android:textSize="17dp"
+        android:gravity="center_vertical"
+        android:textColor="#6a6a6a"
+        android:id="@+id/insurance_lv_text"
+        />
+</LinearLayout>

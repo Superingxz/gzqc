@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.pickcar.AddCarInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_bg"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                >
+
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="车牌号:"
+                        />
+                    <EditText
+                        android:id="@+id/car_nunber"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:hint="输入车牌"
+                        />
+
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="品牌:"
+                        />
+                    <EditText
+                        android:id="@+id/brand"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:hint="输入品牌"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="车型:"
+                        />
+                    <EditText
+                        android:id="@+id/models"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:hint="输入车型"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="排量:"
+                        />
+                    <TextView
+                        android:id="@+id/displacement"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="年份:"
+                        />
+                    <EditText
+                        android:id="@+id/year"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:maxLength="4"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="驱动:"
+                        />
+                    <TextView
+                        android:id="@+id/drive"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="燃料:"
+                        />
+                    <TextView
+                        android:id="@+id/fuel"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="操作:"
+                        />
+                    <TextView
+                        android:id="@+id/operation"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="VIN码:"
+                        />
+                    <EditText
+                        android:id="@+id/vin_code"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:maxLength="36"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="发动机号:"
+                        />
+                    <EditText
+                        android:id="@+id/engine"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:maxLength="17"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="注册日期:"
+                        />
+                    <TextView
+                        android:id="@+id/login_data"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+

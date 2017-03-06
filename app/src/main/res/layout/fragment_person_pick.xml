@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="个人中心"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_bg"
+        android:orientation="vertical"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            >
+            <TableRow
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:padding="3dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/name"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="姓               名"
+                    android:textColor="@color/text1"
+                    android:gravity="center"
+                    android:layout_marginRight="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textColor="@color/text1"
+                    />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                />
+
+            <TableRow
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:padding="3dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/sex"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="性               别"
+                    android:textColor="@color/text1"
+                    android:gravity="center"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:textColor="@color/text1"
+                    />
+
+            </TableRow>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                />
+
+            <TableRow
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:padding="3dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/phone"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="手                机"
+                    android:textColor="@color/text1"
+                    android:gravity="center"
+                    android:layout_marginRight="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textColor="@color/text1"
+                    android:textSize="14sp"
+                    android:maxLength="11"
+                    />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                />
+
+            <TableRow
+                android:gravity="center_vertical"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:padding="3dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/dept"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text=" 所 属 汽 修  厂"
+                    android:textColor="@color/text1"
+                    android:gravity="center"
+                    android:layout_marginRight="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/dept"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textColor="@color/text1"
+                    android:textSize="14sp"
+                    />
+
+            </TableRow>
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                />
+
+            <TableRow
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:padding="3dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/password"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="密码（新6位）"
+                    android:textColor="@color/text1"
+                    android:gravity="center"
+                    android:layout_marginRight="25dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textColor="@color/text1"
+                    android:inputType="textPassword"
+                    android:textSize="14sp"
+                    android:maxLength="6"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb_show"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="显示"
+                    android:textColor="@color/text2"
+                    />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    />
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                />
+
+            <TableRow
+                android:visibility="gone"
+                android:id="@+id/tr_ocu"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:padding="2dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/occupation"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="职                 位"
+                    android:textColor="@color/text1"
+                    android:gravity="center"
+                    android:layout_marginRight="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/ocupation"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textColor="@color/text1"
+                    android:textSize="14sp"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+        <com.xolo.gzqc.ui.view.ExEditText
+            android:id="@+id/eet_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:leftTitle="帮助文档"
+            android:layout_marginTop="20dp"
+            app:showArrow="true"
+            app:leftSrc="@mipmap/help"
+            app:hiddenTop="true"
+            />
+
+        <com.xolo.gzqc.ui.view.ExEditText
+            android:id="@+id/edit_change_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:leftTitle="切换角色"
+            app:showArrow="true"
+            app:leftSrc="@mipmap/chane_role"
+            />
+
+        <com.xolo.gzqc.ui.view.ExEditText
+            android:id="@+id/eet_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:leftTitle="修改密码"
+            app:showArrow="true"
+            app:leftSrc="@mipmap/password"
+            />
+        <com.xolo.gzqc.ui.view.ExEditText
+            android:id="@+id/eet_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:leftTitle="二维码分享"
+            app:showArrow="true"
+            app:leftSrc="@mipmap/update"
+            />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/edit_password"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="修改密码"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_button"
+                android:layout_margin="20dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

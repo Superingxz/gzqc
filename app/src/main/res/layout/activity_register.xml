@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_role_bg"
+    >
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="注册"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_register_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/btn_role_bg"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/registered_supplier"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="供应商申请入驻"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/arrow_white_right"
+            android:paddingRight="10dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/btn_register_dept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/btn_role_bg"
+        android:paddingLeft="10dp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/registered_dept"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="维修厂申请入驻"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/arrow_white_right"
+            android:paddingRight="10dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_register_consumers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/btn_role_bg"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/registered_consumer"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="消费者注册"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/arrow_white_right"
+            android:paddingRight="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温馨提示"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 1.供应商申请入驻是指有销售资质的厂家、经销商等，入驻平台后，可以使用此APP上发布商品销售。"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. 维修厂申请入驻是指有汽车维修资质的厂家，入驻平台后，可以在此APP上进行汽车维修的相关操作。"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. 消费者注册泛指在此APP上购买供应商发布的商品的用户。"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+
+
+</LinearLayout>

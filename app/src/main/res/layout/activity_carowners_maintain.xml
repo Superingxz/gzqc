@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/activity_bg"
+    android:layout_height="match_parent">
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="我的维修"
+        />
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/home_layout"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="90dp">
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@mipmap/home02"
+            />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的预约"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@mipmap/home13"
+                />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购件进度"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@mipmap/home04"
+                />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格确认"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@mipmap/home08"
+                />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="维修记录"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:background="@color/activity_bg"
+    android:orientation="vertical"
+    android:id="@+id/home_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

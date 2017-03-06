@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/oinfo_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/oinfo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+
+    <EditText
+        android:background="@null"
+        android:maxLength="11"
+        android:id="@+id/oinfo_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text=""
+        android:textColor="@color/text2"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_man"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/man_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="男"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_female"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/female_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="女"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:visibility="gone"
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

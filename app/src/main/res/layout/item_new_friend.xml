@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/seach"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="陈冲"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text1"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="已同意"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/btn_1"
+        style="@style/btn2"
+        android:text="接收"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:text="拒绝"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btn_1"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_et_bg"
+        android:minWidth="60dp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

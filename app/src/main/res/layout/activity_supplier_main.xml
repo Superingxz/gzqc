@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--供应商首页-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ececec"
+    android:layout_height="match_parent">
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="供应商首页"
+        />
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout android:layout_margin="5dp"
+         android:id="@+id/order_centent"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/order_center"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:text="订单中心"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <View
+            android:background="#a5a5a5"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            />
+        <LinearLayout
+            android:id="@+id/goods_sell"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@mipmap/shop_sell"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:text="商品上架"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="#a5a5a5"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            />
+        <LinearLayout
+            android:id="@+id/shop_fitment"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@mipmap/shop_fitment"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:text="店铺装修"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="#a5a5a5"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            />
+        <LinearLayout
+            android:id="@+id/notice"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@mipmap/shop_show"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:text="店铺公告"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="#a5a5a5"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        />
+
+    <GridView
+        android:layout_margin="10dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:id="@+id/supplier_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

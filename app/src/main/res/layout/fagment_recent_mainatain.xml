@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:background="@color/activity_bg"
+android:layout_height="match_parent">
+
+<ListView
+    android:layout_alignParentTop="true"
+    android:background="@color/white"
+    android:layout_margin="10dp"
+    android:dividerHeight="10dp"
+    android:id="@+id/maintain_re_lv"
+    android:layout_above="@+id/mainntain_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</ListView>
+
+
+<TextView
+    android:layout_alignParentBottom="true"
+    android:id="@+id/mainntain_text"
+    android:padding="10dp"
+    android:textColor="#474747"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:textSize="13dp"
+    android:text="提示:系统默认最近的10条预约处理记录"
+    android:layout_height="50dp" />
+</RelativeLayout>

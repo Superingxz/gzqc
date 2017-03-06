@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/shape_role_bg"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context=".ui.activity.RoleActivity">
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/btn_role_bg"
+        android:paddingLeft="10dp"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/role_pick_car"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="我是接车员"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text1"
+            android:drawableRight="@mipmap/arrow_white_right"
+            android:paddingRight="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/btn_role_bg"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/role_procurement"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="我是采购员"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text1"
+            android:drawableRight="@mipmap/arrow_white_right"
+            android:paddingRight="10dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/btn_role_bg"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/role_team"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="我是班组人员"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text1"
+            android:drawableRight="@mipmap/arrow_white_right"
+            android:paddingRight="10dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/btn_role_bg"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/role_pick_car"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="我是车主"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text1"
+            android:drawableRight="@mipmap/arrow_white_right"
+            android:paddingRight="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/btn_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/btn_role_bg"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/role_boss"
+            android:padding="3dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="我是老板"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text1"
+            android:drawableRight="@mipmap/arrow_white_right"
+            android:paddingRight="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/btn_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/btn_role_bg"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/admission"
+            android:padding="3dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="我是管理员"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text1"
+            android:drawableRight="@mipmap/arrow_white_right"
+            android:paddingRight="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="保险公司电话："
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+
+
+        <TextView
+            android:id="@+id/phone"
+            android:textColor="#8f8f8f"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="123124151515"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bebebe"/>
+
+</LinearLayout>

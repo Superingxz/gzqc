@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/item_carowner_shape"
+    android:layout_height="60dp">
+
+
+  <ImageView
+      android:visibility="gone"
+      android:id="@+id/owner_info_img"
+      android:layout_centerInParent="true"
+      android:layout_alignParentLeft="true"
+      android:layout_margin="10dp"
+      android:layout_width="70dp"
+      android:background="@mipmap/bmw"
+      android:layout_height="70dp" />
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/owner_info_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#585858"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车牌号："
+            />
+
+        <TextView
+            android:id="@+id/owner_car_number"
+            android:textColor="#585858"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="粤A 12351"
+            />
+    </LinearLayout>
+
+
+        <LinearLayout
+                android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#585858"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="品牌："
+                />
+
+            <TextView
+                android:id="@+id/owner_car_type"
+                android:textColor="#585858"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宝马"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#585858"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车型："
+                />
+
+            <TextView
+                android:id="@+id/owner_car_code"
+                android:textColor="#585858"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R3c"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.activity.pickcar.InquiryActivity">
+
+    <com.xolo.gzqc.ui.view.TitleView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="购件到货"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_bg"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/activity_bg"
+            >
+
+            <TableLayout
+                android:layout_marginTop="20dp"
+                style="@style/tablayout1"
+                >
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="车牌号"
+                        />
+                    <TextView
+                        android:id="@+id/car_nunber"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:hint="选择车牌"
+                        />
+
+                    <Button
+                        android:id="@+id/select"
+                        style="@style/btn2"
+                        android:layout_height="30dp"
+                        android:text="选择"
+                        />
+
+
+                </TableRow>
+
+
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="品牌"
+                        />
+                    <TextView
+                        android:id="@+id/brand"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:hint="选择车牌读取"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="型号"
+                        />
+                    <TextView
+                        android:id="@+id/models"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:hint="选择车牌读取"
+                        />
+
+                </TableRow>
+
+
+                <RelativeLayout
+                    style="@style/tab_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:id="@+id/btn_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="显示更多"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@mipmap/right_img"
+                        />
+
+                </RelativeLayout>
+
+            </TableLayout>
+
+
+
+
+            <TableLayout
+                style="@style/tablayout1"
+                android:visibility="gone"
+                android:id="@+id/tl_hidden"
+                android:layout_marginTop="20dp"
+                >
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="排量"
+                        />
+                    <TextView
+                        android:id="@+id/displacement"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:hint="选择车牌读取"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="年份"
+                        />
+                    <TextView
+                        android:id="@+id/year"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:maxLength="4"
+                        android:hint="选择车牌读取"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="驱动"
+                        />
+                    <TextView
+                        android:id="@+id/drive"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:hint="选择车牌读取"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="燃料"
+                        />
+                    <TextView
+                        android:id="@+id/fuel"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:hint="选择车牌读取"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="操控"
+                        />
+                    <TextView
+                        android:id="@+id/operation"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:hint="选择车牌读取"
+                        />
+
+                </TableRow>
+
+
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="VIN码"
+                        />
+                    <TextView
+                        android:id="@+id/vin_code"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:maxLength="17"
+                        android:hint="选择车牌读取"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="发动机号"
+                        />
+                    <TextView
+                        android:id="@+id/engine"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:maxLength="17"
+                        android:hint="选择车牌读取"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    style="@style/tab_row"
+                    >
+                    <TextView
+                        style="@style/tv1"
+                        android:text="注册日期"
+                        />
+                    <TextView
+                        android:id="@+id/login_data"
+                        style="@style/et1"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:hint="选择车牌读取"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配件清单"
+                    android:textColor="@color/DarkBlue"
+                    android:layout_centerVertical="true"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/DarkBlue"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:background="@color/white"
+
+                >
+
+                <com.xolo.gzqc.ui.view.ScrollListView
+                    android:id="@+id/lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/confirm"
+                    style="@style/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="20dp"
+                    android:text="确定"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.xolo.gzqc.ui.view.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:mtitle="救援出险"
+        />
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@mipmap/re_car"
+        android:id="@+id/rescue_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+   
+    
+    <RelativeLayout
+        android:id="@+id/rescue_road"
+        android:background="@drawable/shape_button"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:src="@mipmap/rescue1"
+            android:layout_height="50dp" />
+
+<TextView
+    android:layout_centerInParent="true"
+    android:textSize="25dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:text="道路救援"
+    />
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:src="@mipmap/rescue2"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rescue_car"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:src="@mipmap/rescue3"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="车辆出险"
+            />
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:src="@mipmap/rescue4"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="50dp"></RelativeLayout>
+</LinearLayout>

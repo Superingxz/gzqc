@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/dept"
+            android:layout_centerVertical="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/btn_delect"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/delect_good"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="25dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/iv"
+            android:layout_toLeftOf="@id/btn_delect"
+            android:textColor="@color/text1"
+            android:text="金户平开门"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="￥2300.00"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_delect"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="25dp"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_et_bg"
+            android:layout_below="@id/tv_price"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:id="@+id/btn_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/add_qty"
+                android:padding="4dp"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#a7a7a7"
+                />
+            <TextView
+                android:id="@+id/tv_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:minWidth="50dp"
+                android:minHeight="25dp"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#a7a7a7"
+                />
+            <ImageView
+                android:id="@+id/btn_reduct"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/reduction_qty"
+                android:padding="4dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>
